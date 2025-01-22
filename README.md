@@ -2,7 +2,7 @@
 
 Test your knowledge of Star Wars characters in this interactive quiz game! Available in two difficulty modes, this game challenges players to identify characters from the Star Wars universe.
 
-🎮 [Play Now](https://jade-moonbeam-41385f.netlify.app)
+🎮 [Play Now](https://youthinkyouiknowstarwars.netlify.app)
 
 ## Features
 
