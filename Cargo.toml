@@ -1,0 +1,18 @@
+[package]
+name = "so-you-think-you-know-star-wars"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+leptos = { version = "0.8.22", features = ["csr"] }
+console_error_panic_hook = "0.1.7"
+js-sys = "0.3.106"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1"
+web-sys = { version = "0.3.106", features = ["Storage", "MediaQueryList", "KeyboardEvent"] }
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"

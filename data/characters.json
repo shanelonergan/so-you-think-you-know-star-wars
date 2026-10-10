@@ -1,0 +1,740 @@
+[
+ {
+  "id": 1,
+  "name": "Luke Skywalker",
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 2,
+  "starships": 2
+ },
+ {
+  "id": 2,
+  "name": "C-3PO",
+  "homeworld": "Tatooine",
+  "species": "Droid",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 3,
+  "name": "R2-D2",
+  "homeworld": "Naboo",
+  "species": "Droid",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 4,
+  "name": "Darth Vader",
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 1
+ },
+ {
+  "id": 5,
+  "name": "Leia Organa",
+  "homeworld": "Alderaan",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 1,
+  "starships": 0
+ },
+ {
+  "id": 6,
+  "name": "Owen Lars",
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 7,
+  "name": "Beru Whitesun lars",
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 8,
+  "name": "R5-D4",
+  "homeworld": "Tatooine",
+  "species": "Droid",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 9,
+  "name": "Biggs Darklighter",
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 1
+ },
+ {
+  "id": 10,
+  "name": "Obi-Wan Kenobi",
+  "homeworld": "Stewjon",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 1,
+  "starships": 5
+ },
+ {
+  "id": 11,
+  "name": "Anakin Skywalker",
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 2,
+  "starships": 3
+ },
+ {
+  "id": 12,
+  "name": "Wilhuff Tarkin",
+  "homeworld": "Eriadu",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 13,
+  "name": "Chewbacca",
+  "homeworld": "Kashyyyk",
+  "species": "Wookie",
+  "film": "A New Hope",
+  "vehicles": 1,
+  "starships": 2
+ },
+ {
+  "id": 14,
+  "name": "Han Solo",
+  "homeworld": "Corellia",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 2
+ },
+ {
+  "id": 15,
+  "name": "Greedo",
+  "homeworld": "Rodia",
+  "species": "Rodian",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 16,
+  "name": "Jabba Desilijic Tiure",
+  "homeworld": "Nal Hutta",
+  "species": "Hutt",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 18,
+  "name": "Wedge Antilles",
+  "homeworld": "Corellia",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 1,
+  "starships": 1
+ },
+ {
+  "id": 19,
+  "name": "Jek Tono Porkins",
+  "homeworld": "Bestine IV",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 1
+ },
+ {
+  "id": 20,
+  "name": "Yoda",
+  "homeworld": "unknown",
+  "species": "Yoda's species",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 21,
+  "name": "Palpatine",
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 22,
+  "name": "Boba Fett",
+  "homeworld": "Kamino",
+  "species": "Human",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 1
+ },
+ {
+  "id": 23,
+  "name": "IG-88",
+  "homeworld": "unknown",
+  "species": "Droid",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 24,
+  "name": "Bossk",
+  "homeworld": "Trandosha",
+  "species": "Trandoshan",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 25,
+  "name": "Lando Calrissian",
+  "homeworld": "Socorro",
+  "species": "Human",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 1
+ },
+ {
+  "id": 26,
+  "name": "Lobot",
+  "homeworld": "Bespin",
+  "species": "Human",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 27,
+  "name": "Ackbar",
+  "homeworld": "Mon Cala",
+  "species": "Mon Calamari",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 28,
+  "name": "Mon Mothma",
+  "homeworld": "Chandrila",
+  "species": "Human",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 29,
+  "name": "Arvel Crynyd",
+  "homeworld": "unknown",
+  "species": "Human",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 1
+ },
+ {
+  "id": 30,
+  "name": "Wicket Systri Warrick",
+  "homeworld": "Endor",
+  "species": "Ewok",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 31,
+  "name": "Nien Nunb",
+  "homeworld": "Sullust",
+  "species": "Sullustan",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 1
+ },
+ {
+  "id": 32,
+  "name": "Qui-Gon Jinn",
+  "homeworld": "unknown",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 1,
+  "starships": 0
+ },
+ {
+  "id": 33,
+  "name": "Nute Gunray",
+  "homeworld": "Cato Neimoidia",
+  "species": "Neimodian",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 34,
+  "name": "Finis Valorum",
+  "homeworld": "Coruscant",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 35,
+  "name": "Padmé Amidala",
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 3
+ },
+ {
+  "id": 36,
+  "name": "Jar Jar Binks",
+  "homeworld": "Naboo",
+  "species": "Gungan",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 37,
+  "name": "Roos Tarpals",
+  "homeworld": "Naboo",
+  "species": "Gungan",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 38,
+  "name": "Rugor Nass",
+  "homeworld": "Naboo",
+  "species": "Gungan",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 39,
+  "name": "Ric Olié",
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 1
+ },
+ {
+  "id": 40,
+  "name": "Watto",
+  "homeworld": "Toydaria",
+  "species": "Toydarian",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 41,
+  "name": "Sebulba",
+  "homeworld": "Malastare",
+  "species": "Dug",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 42,
+  "name": "Quarsh Panaka",
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 43,
+  "name": "Shmi Skywalker",
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 44,
+  "name": "Darth Maul",
+  "homeworld": "Dathomir",
+  "species": "Zabrak",
+  "film": "The Phantom Menace",
+  "vehicles": 1,
+  "starships": 1
+ },
+ {
+  "id": 45,
+  "name": "Bib Fortuna",
+  "homeworld": "Ryloth",
+  "species": "Twi'lek",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 46,
+  "name": "Ayla Secura",
+  "homeworld": "Ryloth",
+  "species": "Twi'lek",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 47,
+  "name": "Ratts Tyerel",
+  "homeworld": "Aleen Minor",
+  "species": "Aleena",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 48,
+  "name": "Dud Bolt",
+  "homeworld": "Vulpter",
+  "species": "Vulptereen",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 49,
+  "name": "Gasgano",
+  "homeworld": "Troiken",
+  "species": "Xexto",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 50,
+  "name": "Ben Quadinaros",
+  "homeworld": "Tund",
+  "species": "Toong",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 51,
+  "name": "Mace Windu",
+  "homeworld": "Haruun Kal",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 52,
+  "name": "Ki-Adi-Mundi",
+  "homeworld": "Cerea",
+  "species": "Cerean",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 53,
+  "name": "Kit Fisto",
+  "homeworld": "Glee Anselm",
+  "species": "Nautolan",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 54,
+  "name": "Eeth Koth",
+  "homeworld": "Iridonia",
+  "species": "Zabrak",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 55,
+  "name": "Adi Gallia",
+  "homeworld": "Coruscant",
+  "species": "Tholothian",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 56,
+  "name": "Saesee Tiin",
+  "homeworld": "Iktotch",
+  "species": "Iktotchi",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 57,
+  "name": "Yarael Poof",
+  "homeworld": "Quermia",
+  "species": "Quermian",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 58,
+  "name": "Plo Koon",
+  "homeworld": "Dorin",
+  "species": "Kel Dor",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 1
+ },
+ {
+  "id": 59,
+  "name": "Mas Amedda",
+  "homeworld": "Champala",
+  "species": "Chagrian",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 60,
+  "name": "Gregar Typho",
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 1
+ },
+ {
+  "id": 61,
+  "name": "Cordé",
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 62,
+  "name": "Cliegg Lars",
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 63,
+  "name": "Poggle the Lesser",
+  "homeworld": "Geonosis",
+  "species": "Geonosian",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 64,
+  "name": "Luminara Unduli",
+  "homeworld": "Mirial",
+  "species": "Mirialan",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 65,
+  "name": "Barriss Offee",
+  "homeworld": "Mirial",
+  "species": "Mirialan",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 66,
+  "name": "Dormé",
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 67,
+  "name": "Dooku",
+  "homeworld": "Serenno",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 1,
+  "starships": 0
+ },
+ {
+  "id": 68,
+  "name": "Bail Prestor Organa",
+  "homeworld": "Alderaan",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 69,
+  "name": "Jango Fett",
+  "homeworld": "Concord Dawn",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 70,
+  "name": "Zam Wesell",
+  "homeworld": "Zolan",
+  "species": "Clawdite",
+  "film": "Attack of the Clones",
+  "vehicles": 1,
+  "starships": 0
+ },
+ {
+  "id": 71,
+  "name": "Dexter Jettster",
+  "homeworld": "Ojom",
+  "species": "Besalisk",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 72,
+  "name": "Lama Su",
+  "homeworld": "Kamino",
+  "species": "Kaminoan",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 73,
+  "name": "Taun We",
+  "homeworld": "Kamino",
+  "species": "Kaminoan",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 74,
+  "name": "Jocasta Nu",
+  "homeworld": "Coruscant",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 75,
+  "name": "R4-P17",
+  "homeworld": "unknown",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 76,
+  "name": "Wat Tambor",
+  "homeworld": "Skako",
+  "species": "Skakoan",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 77,
+  "name": "San Hill",
+  "homeworld": "Muunilinst",
+  "species": "Muun",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 78,
+  "name": "Shaak Ti",
+  "homeworld": "Shili",
+  "species": "Togruta",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 79,
+  "name": "Grievous",
+  "homeworld": "Kalee",
+  "species": "Kaleesh",
+  "film": "Revenge of the Sith",
+  "vehicles": 1,
+  "starships": 1
+ },
+ {
+  "id": 80,
+  "name": "Tarfful",
+  "homeworld": "Kashyyyk",
+  "species": "Wookie",
+  "film": "Revenge of the Sith",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 81,
+  "name": "Raymus Antilles",
+  "homeworld": "Alderaan",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 82,
+  "name": "Sly Moore",
+  "homeworld": "Umbara",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0
+ },
+ {
+  "id": 83,
+  "name": "Tion Medon",
+  "homeworld": "Utapau",
+  "species": "Pau'an",
+  "film": "Revenge of the Sith",
+  "vehicles": 0,
+  "starships": 0
+ }
+]
