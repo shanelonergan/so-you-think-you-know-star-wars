@@ -22,6 +22,19 @@ pub struct Character {
     /// How well known they are: 1 famous, 2 fan favourite, 3 deep cut.
     /// A judgment call, made by hand in `data/characters.json`.
     pub tier: u8,
+    /// From akabab/starwars-api, as it names them; `hints` picks the
+    /// well-known ones.
+    #[serde(default)]
+    pub affiliations: Vec<String>,
+    #[serde(default)]
+    pub masters: Vec<String>,
+    #[serde(default)]
+    pub apprentices: Vec<String>,
+    /// Droids only, e.g. "Astromech droid".
+    #[serde(default)]
+    pub droid_class: Option<String>,
+    #[serde(default)]
+    pub manufacturer: Option<String>,
 }
 
 /// What they look like at a glance, so multiple choice never pairs a face

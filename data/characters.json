@@ -9,7 +9,28 @@
   "starships": 2,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Alliance to Restore the Republic",
+   "Red Squadron",
+   "Rogue Squadron",
+   "Massassi Group",
+   "Leia Organa's team",
+   "Endor strike team",
+   "Jedi Order",
+   "Bright Tree tribe",
+   "New Republic",
+   "Resistance"
+  ],
+  "masters": [
+   "Obi-Wan Kenobi",
+   "Yoda"
+  ],
+  "apprentices": [
+   "Leia Organa",
+   "Ben Solo",
+   "Rey"
+  ]
  },
  {
   "id": 2,
@@ -21,7 +42,28 @@
   "starships": 0,
   "kind": "droid",
   "gender": "other",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Skywalker family",
+   "Confederacy of Independent Systems",
+   "Royal House of Naboo",
+   "Galactic Republic",
+   "House of Organa",
+   "Galactic Empire",
+   "Alliance to Restore the Republic",
+   "Massassi Group",
+   "Leia Organa's team",
+   "Pathfinders",
+   "Endor strike team",
+   "Bright Tree tribe",
+   "New Republic",
+   "Resistance",
+   "Resistance spy droid network"
+  ],
+  "masters": [],
+  "apprentices": [],
+  "droid_class": "Protocol droid",
+  "manufacturer": "Cybot Galactica"
  },
  {
   "id": 3,
@@ -33,7 +75,27 @@
   "starships": 0,
   "kind": "droid",
   "gender": "other",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Galactic Republic",
+   "501st Legion",
+   "R2-D2's battle droid squadron",
+   "D-Squad",
+   "House of Organa",
+   "Galactic Empire",
+   "Alliance to Restore the Republic",
+   "Massassi Group",
+   "Red Squadron",
+   "Leia Organa's team",
+   "Endor strike team",
+   "Bright Tree tribe",
+   "Resistance"
+  ],
+  "masters": [],
+  "apprentices": [],
+  "droid_class": "Astromech droid",
+  "manufacturer": "Industrial Automaton"
  },
  {
   "id": 4,
@@ -45,7 +107,22 @@
   "starships": 1,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "501st Legion",
+   "Sith",
+   "Galactic Empire",
+   "Imperial High Command"
+  ],
+  "masters": [
+   "Qui-Gon Jinn",
+   "Obi-Wan Kenobi",
+   "Darth Sidious"
+  ],
+  "apprentices": [
+   "Ahsoka Tano",
+   "Inquisitorius"
+  ]
  },
  {
   "id": 5,
@@ -57,7 +134,26 @@
   "starships": 0,
   "kind": "human",
   "gender": "female",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Elder Houses",
+   "House of Organa",
+   "Galactic Empire",
+   "Imperial Senate",
+   "Alliance to Restore the Republic",
+   "Massassi Group",
+   "Leia Organa's team",
+   "Endor strike team",
+   "Alliance High Command",
+   "Bright Tree tribe",
+   "New Republic",
+   "Populists",
+   "Resistance"
+  ],
+  "masters": [
+   "Luke Skywalker"
+  ],
+  "apprentices": []
  },
  {
   "id": 6,
@@ -69,7 +165,12 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Lars family"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 7,
@@ -81,7 +182,10 @@
   "starships": 0,
   "kind": "human",
   "gender": "female",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 8,
@@ -93,7 +197,14 @@
   "starships": 0,
   "kind": "droid",
   "gender": "other",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Alliance to Restore the Republic"
+  ],
+  "masters": [],
+  "apprentices": [],
+  "droid_class": "Astromech droid",
+  "manufacturer": "Industrial Automaton"
  },
  {
   "id": 9,
@@ -105,7 +216,16 @@
   "starships": 1,
   "kind": "human",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Galactic Empire",
+   "Prefsbelt Fleet Camp",
+   "Alliance to Restore the Republic",
+   "Red Squadron",
+   "Massassi Group"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 10,
@@ -117,7 +237,22 @@
   "starships": 5,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Galactic Republic",
+   "212th Attack Battalion",
+   "Alliance to Restore the Republic"
+  ],
+  "masters": [
+   "Qui-Gon Jinn",
+   "Yoda"
+  ],
+  "apprentices": [
+   "Anakin Skywalker",
+   "Luke Skywalker"
+  ]
  },
  {
   "id": 11,
@@ -129,7 +264,22 @@
   "starships": 3,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "501st Legion",
+   "Sith",
+   "Galactic Empire",
+   "Imperial High Command"
+  ],
+  "masters": [
+   "Qui-Gon Jinn",
+   "Obi-Wan Kenobi",
+   "Darth Sidious"
+  ],
+  "apprentices": [
+   "Ahsoka Tano",
+   "Inquisitorius"
+  ]
  },
  {
   "id": 12,
@@ -141,19 +291,47 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Galactic Republic",
+   "Sullust Sector Spacefarers Academy",
+   "Judicial Forces",
+   "Republic Navy",
+   "Strategic Advisory Cell",
+   "Outland Regions Security Force",
+   "Outland's anti-pirate taskforce",
+   "Galactic Empire",
+   "Battle Station Command",
+   "Imperial Officer Corps",
+   "Imperial Navy",
+   "Tarkin Initiative"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 13,
   "name": "Chewbacca",
   "homeworld": "Kashyyyk",
-  "species": "Wookie",
+  "species": "Wookiee",
   "film": "A New Hope",
   "vehicles": 1,
   "starships": 2,
   "kind": "alien",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Galactic Republic",
+   "Alliance to Restore the Republic",
+   "Leia Organa's team",
+   "Pathfinders",
+   "Endor strike team",
+   "Bright Tree tribe",
+   "New Republic",
+   "Resistance"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 14,
@@ -165,7 +343,22 @@
   "starships": 2,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Galactic Empire",
+   "Jabba Desilijic Tiure's criminal empire",
+   "Alliance to Restore the Republic",
+   "Leia Organa's team",
+   "Endor strike team",
+   "Kingdom of Han",
+   "Bright Tree tribe",
+   "New Republic",
+   "New Republic Pilots Commission",
+   "Han Solo's shipping company",
+   "Resistance"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 15,
@@ -177,7 +370,12 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Trade Federation"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 16,
@@ -189,7 +387,18 @@
   "starships": 0,
   "kind": "alien",
   "gender": "other",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Hutt Clan",
+   "Grand Hutt Council",
+   "Jabba Desilijic Tiure's criminal empire",
+   "Galactic Republic",
+   "Shadow Collective",
+   "Crymorah syndicate",
+   "Galactic Empire"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 18,
@@ -201,7 +410,19 @@
   "starships": 1,
   "kind": "human",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Galactic Empire",
+   "Alliance to Restore the Republic",
+   "Phoenix Cell",
+   "Massassi Group",
+   "Red Squadron",
+   "Rogue Squadron",
+   "New Republic",
+   "Phantom Squadron"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 19,
@@ -213,7 +434,15 @@
   "starships": 1,
   "kind": "human",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Alliance to Restore the Republic",
+   "Tierfon Yellow Aces",
+   "Red Squadron",
+   "Massassi Group"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 20,
@@ -225,7 +454,21 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [
+   "Garro"
+  ],
+  "apprentices": [
+   "Dooku",
+   "Obi-Wan Kenobi",
+   "Luke Skywalker"
+  ]
  },
  {
   "id": 21,
@@ -237,7 +480,37 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "House Palpatine",
+   "Damask Holdings",
+   "Royal House of Naboo",
+   "Sith",
+   "Order of the Sith Lords",
+   "Naboo Diplomatic Corps",
+   "Galactic Republic",
+   "Galactic Senate",
+   "Trade Federation",
+   "Confederacy of Independent Systems",
+   "Galactic Empire",
+   "Dark Empire"
+  ],
+  "masters": [
+   "Darth Plagueis"
+  ],
+  "apprentices": [
+   "Darth Maul",
+   "A Nikto",
+   "Vergere",
+   "Darth Tyranus",
+   "Garth Ezzar",
+   "Darth Vader",
+   "Ferus Olin",
+   "Mara Jade",
+   "Cronal",
+   "Lumiya",
+   "Luke Skywalker"
+  ]
  },
  {
   "id": 22,
@@ -249,7 +522,15 @@
   "starships": 1,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Confederacy of Independent Systems",
+   "Boba Fett's syndicate",
+   "Jabba Desilijic Tiure's criminal empire",
+   "Galactic Empire"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 23,
@@ -261,7 +542,12 @@
   "starships": 0,
   "kind": "droid",
   "gender": "other",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": [],
+  "droid_class": "Assassin droid",
+  "manufacturer": "Holowan Laboratories"
  },
  {
   "id": 24,
@@ -273,7 +559,15 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Bounty Hunters' Guild",
+   "Boba Fett's syndicate",
+   "Galactic Empire",
+   "Chelli Aphra's crew"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 25,
@@ -285,7 +579,19 @@
   "starships": 1,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Cloud City colony",
+   "Galactic Empire",
+   "Alliance to Restore the Republic",
+   "Gold Squadron",
+   "New Republic",
+   "New Republic military",
+   "Uprising",
+   "Calrissian Enterprises"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 26,
@@ -297,7 +603,16 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Galactic Empire",
+   "Imperial Military",
+   "Cloud City",
+   "Alliance to Restore the Republic",
+   "New Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 27,
@@ -309,7 +624,24 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Mon Cala monarchy",
+   "Mon Calamari Guard",
+   "Galactic Republic",
+   "Galactic Empire",
+   "Alliance to Restore the Republic",
+   "Alliance Fleet",
+   "Alliance High Command",
+   "New Republic",
+   "New Republic Defense Fleet",
+   "Resistance",
+   "Resistance High Command",
+   "Resistance Fleet Command",
+   "Resistance navy"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 28,
@@ -321,7 +653,19 @@
   "starships": 0,
   "kind": "human",
   "gender": "female",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Galactic Republic",
+   "Loyalist Committee",
+   "Delegation of 2,000",
+   "Galactic Empire",
+   "Imperial Senate",
+   "Mon Mothma's rebel cell",
+   "Alliance to Restore the Republic",
+   "New Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 29,
@@ -333,7 +677,13 @@
   "starships": 1,
   "kind": "human",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Alliance to Restore the Republic",
+   "Green Squadron"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 30,
@@ -345,7 +695,13 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Bright Tree tribe",
+   "Alliance to Restore the Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 31,
@@ -357,7 +713,17 @@
   "starships": 1,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "House of Organa",
+   "Alliance to Restore the Republic",
+   "Gold Squadron",
+   "New Republic",
+   "Resistance",
+   "Red Squadron"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 32,
@@ -369,19 +735,37 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Jedi Order",
+   "Galactic Republic"
+  ],
+  "masters": [
+   "Dooku"
+  ],
+  "apprentices": [
+   "Obi-Wan Kenobi",
+   "Anakin Skywalker"
+  ]
  },
  {
   "id": 33,
   "name": "Nute Gunray",
   "homeworld": "Cato Neimoidia",
-  "species": "Neimodian",
+  "species": "Neimoidian",
   "film": "The Phantom Menace",
   "vehicles": 0,
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Trade Federation",
+   "Confederacy of Independent Systems",
+   "Separatist Council"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 34,
@@ -393,7 +777,14 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "House Valorum",
+   "Galactic Republic",
+   "Galactic Senate"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 35,
@@ -405,7 +796,19 @@
   "starships": 3,
   "kind": "human",
   "gender": "female",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Apprentice Legislators",
+   "Legislative Youth Program",
+   "Royal House of Naboo",
+   "Galactic Republic",
+   "Loyalist Committee",
+   "Delegation of 2,000",
+   "Galactic Empire",
+   "Imperial Senate"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 36,
@@ -417,7 +820,17 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Gungan High Council",
+   "Officer corps",
+   "Galactic Republic",
+   "Naboo delegation",
+   "Galactic Empire",
+   "Imperial Senate"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 37,
@@ -429,7 +842,12 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Gungan Grand Army"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 38,
@@ -441,7 +859,12 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Gungan High Council"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 39,
@@ -453,7 +876,14 @@
   "starships": 1,
   "kind": "human",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Royal Naboo Security Forces",
+   "Bravo Flight"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 40,
@@ -465,7 +895,13 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Watto's shop",
+   "Mos Espa"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 41,
@@ -477,7 +913,10 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 42,
@@ -489,7 +928,16 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Royal Naboo Security Forces",
+   "Galactic Republic",
+   "Republic Special Task Force",
+   "Galactic Empire"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 43,
@@ -501,7 +949,13 @@
   "starships": 0,
   "kind": "human",
   "gender": "female",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Skywalker family",
+   "Lars family"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 44,
@@ -513,7 +967,20 @@
   "starships": 1,
   "kind": "alien",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Nightbrothers",
+   "Sith",
+   "Cad Bane's group",
+   "Death Watch",
+   "Shadow Collective"
+  ],
+  "masters": [
+   "Darth Sidious"
+  ],
+  "apprentices": [
+   "Savage Opress"
+  ]
  },
  {
   "id": 45,
@@ -525,7 +992,13 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Fortuna family",
+   "Jabba Desilijic Tiure's criminal empire"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 46,
@@ -537,7 +1010,17 @@
   "starships": 0,
   "kind": "alien",
   "gender": "female",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Jedi Order",
+   "Galactic Republic"
+  ],
+  "masters": [
+   "Quinlan Vos",
+   "Volfe Karkko",
+   "Tholme"
+  ],
+  "apprentices": []
  },
  {
   "id": 47,
@@ -549,7 +1032,10 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 48,
@@ -561,7 +1047,10 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 49,
@@ -573,7 +1062,10 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 50,
@@ -585,7 +1077,10 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 51,
@@ -597,7 +1092,21 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Mace Windu's squad",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [
+   "Cyslin Myr"
+  ],
+  "apprentices": [
+   "Depa Billaba"
+  ]
  },
  {
   "id": 52,
@@ -609,7 +1118,16 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic",
+   "Galactic Marines"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 53,
@@ -621,7 +1139,18 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Mace Windu's squad",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": [
+   "Nahdar Vebb"
+  ]
  },
  {
   "id": 54,
@@ -633,7 +1162,15 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 55,
@@ -645,7 +1182,16 @@
   "starships": 0,
   "kind": "alien",
   "gender": "female",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 56,
@@ -657,7 +1203,16 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 57,
@@ -669,7 +1224,14 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 58,
@@ -681,7 +1243,16 @@
   "starships": 1,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic",
+   "104th Battalion"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 59,
@@ -693,7 +1264,18 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic",
+   "Galactic Senate",
+   "Office of the Chancellor",
+   "Strategic Advisory Cell",
+   "Galactic Empire",
+   "Imperial Ruling Council",
+   "Coruscant provisional government"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 60,
@@ -705,7 +1287,14 @@
   "starships": 1,
   "kind": "human",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Royal Naboo Security Forces",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 61,
@@ -717,7 +1306,14 @@
   "starships": 0,
   "kind": "human",
   "gender": "female",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Naboo Royal Handmaidens",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 62,
@@ -729,7 +1325,12 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Lars family"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 63,
@@ -741,7 +1342,17 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Stalgasin hive",
+   "Karina the Great's empire",
+   "Techno Union",
+   "Confederacy of Independent Systems",
+   "Separatist Council",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 64,
@@ -753,7 +1364,17 @@
   "starships": 0,
   "kind": "alien",
   "gender": "female",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi assault team",
+   "Galactic Republic",
+   "41st Elite Corps"
+  ],
+  "masters": [],
+  "apprentices": [
+   "Barriss Offee"
+  ]
  },
  {
   "id": 65,
@@ -765,7 +1386,17 @@
   "starships": 0,
   "kind": "alien",
   "gender": "female",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi assault team",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [
+   "Luminara Unduli"
+  ],
+  "apprentices": []
  },
  {
   "id": 66,
@@ -777,7 +1408,14 @@
   "starships": 0,
   "kind": "human",
   "gender": "female",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Naboo Royal Handmaidens",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 67,
@@ -789,7 +1427,25 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "House of Dooku",
+   "Lost Twenty",
+   "Sith",
+   "Independent Movement for Self-Determination",
+   "Confederacy of Independent Systems"
+  ],
+  "masters": [
+   "Yoda",
+   "Darth Sidious"
+  ],
+  "apprentices": [
+   "Qui-Gon Jinn",
+   "Grievous",
+   "Asajj Ventress",
+   "Savage Opress",
+   "Quinlan Vos"
+  ]
  },
  {
   "id": 68,
@@ -801,7 +1457,27 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "House of Organa",
+   "High Court of Alderaan",
+   "Galactic Republic",
+   "Galactic Senate",
+   "Loyalist Committee",
+   "Security Committee",
+   "Delegation of 2000",
+   "Galactic Empire",
+   "Imperial Senate",
+   "Finance Committee",
+   "Appropriations Committee",
+   "Intelligence Oversight Committee",
+   "Military Oversight Committee",
+   "Alderaanian Resistance",
+   "Kota's Militia",
+   "Alliance to Restore the Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 69,
@@ -813,7 +1489,13 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Confederacy of Independent Systems",
+   "Tyranus"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 70,
@@ -825,7 +1507,13 @@
   "starships": 0,
   "kind": "alien",
   "gender": "female",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Mabari",
+   "Confederacy of Independent Systems"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 71,
@@ -837,7 +1525,12 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Dex's Diner"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 72,
@@ -849,7 +1542,12 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 73,
@@ -861,7 +1559,12 @@
   "starships": 0,
   "kind": "alien",
   "gender": "female",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 74,
@@ -873,7 +1576,13 @@
   "starships": 0,
   "kind": "human",
   "gender": "female",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 75,
@@ -885,7 +1594,14 @@
   "starships": 0,
   "kind": "droid",
   "gender": "other",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": [],
+  "droid_class": "Astromech droid",
+  "manufacturer": "Industrial Automaton"
  },
  {
   "id": 76,
@@ -897,7 +1613,15 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Techno Union",
+   "Baktoid Armor Workshop",
+   "Confederacy of Independent Systems",
+   "Separatist Council"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 77,
@@ -909,7 +1633,15 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "InterGalactic Banking Clan",
+   "Muunilinst Banking Clan",
+   "Confederacy of Independent Systems",
+   "Separatist Council"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 78,
@@ -921,7 +1653,16 @@
   "starships": 0,
   "kind": "alien",
   "gender": "female",
-  "tier": 2
+  "tier": 2,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 79,
@@ -933,19 +1674,32 @@
   "starships": 1,
   "kind": "alien",
   "gender": "male",
-  "tier": 1
+  "tier": 1,
+  "affiliations": [
+   "Confederacy of Independent Systems",
+   "Separatist Droid Army"
+  ],
+  "masters": [
+   "Dooku"
+  ],
+  "apprentices": []
  },
  {
   "id": 80,
   "name": "Tarfful",
   "homeworld": "Kashyyyk",
-  "species": "Wookie",
+  "species": "Wookiee",
   "film": "Revenge of the Sith",
   "vehicles": 0,
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 81,
@@ -957,19 +1711,33 @@
   "starships": 0,
   "kind": "human",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "House of Organa",
+   "Alliance to Restore the Republic",
+   "Alliance Military"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 82,
   "name": "Sly Moore",
   "homeworld": "Umbara",
-  "species": "Human",
+  "species": "Umbaran",
   "film": "Attack of the Clones",
   "vehicles": 0,
   "starships": 0,
-  "kind": "human",
+  "kind": "alien",
   "gender": "female",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic",
+   "Office of the Chancellor",
+   "Galactic Empire"
+  ],
+  "masters": [],
+  "apprentices": []
  },
  {
   "id": 83,
@@ -981,6 +1749,11 @@
   "starships": 0,
   "kind": "alien",
   "gender": "male",
-  "tier": 3
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
  }
 ]

@@ -6,7 +6,7 @@ Name the Star Wars character in the portrait. Three wrong answers and you're out
 
 - **Padawan**: pick from four names, 50 points each.
 - **Master**: type the name, 100 points, or 75 if the spelling is close.
-- One free hint per character, plus Give up and Skip.
+- One free hint per character, like their homeworld, faction, or who trained them, plus Give up and Skip.
 - It gets harder as you go: famous faces first, fan favourites from round 9, deep cuts from round 19.
 - Padawan choices always look like the answer: humans with humans, droids with droids, aliens with aliens, matched by gender where possible.
 - Every character comes up once before any repeats.
@@ -19,13 +19,14 @@ The only non-Rust code is the HTML shell and the stylesheet.
 
 | Path | What it holds |
 | --- | --- |
-| `src/game.rs` | The rules: judging guesses, scoring, hints, dealing rounds. No browser code, so `cargo test` covers it. |
+| `src/game.rs` | The rules: judging guesses, scoring, dealing rounds. No browser code, so `cargo test` covers it. |
+| `src/hints.rs` | Which facts make a fair hint, and how to say them. `cargo test print_every_hint -- --ignored --nocapture` lists them all. |
 | `src/data.rs` | The 82 characters, compiled in from `data/characters.json`. |
 | `src/browser.rs` | localStorage, sessionStorage, randomness, reduced motion. |
 | `src/components/` | The intro crawl, menu, game, game-over screen and leaderboard. |
 | `style.css` | All styling. |
 
-`data/characters.json` is a snapshot of [SWAPI](https://swapi.info): name, homeworld, species, first film, and vehicle and starship counts. Each character also has a hand-picked `tier` (1 famous, 2 fan favourite, 3 deep cut), a `kind` and a `gender`; edit the tiers there to retune difficulty. SWAPI doesn't change, so a snapshot is all a game needs.
+`data/characters.json` is a snapshot of [SWAPI](https://swapi.info): name, homeworld, species, first film, and vehicle and starship counts. Affiliations, masters, apprentices and droid models come from [akabab/starwars-api](https://github.com/akabab/starwars-api) (MIT). Each character also has a hand-picked `tier` (1 famous, 2 fan favourite, 3 deep cut), a `kind` and a `gender`; edit the tiers there to retune difficulty. SWAPI doesn't change, so a snapshot is all a game needs.
 Portraits load from the [swapi-gallery](https://github.com/vieraboschkova/swapi-gallery) mirror of the old Star Wars Visual Guide images.
 
 ## Development

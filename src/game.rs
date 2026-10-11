@@ -105,31 +105,6 @@ pub fn is_close_match(guess: &str, answer: &str) -> bool {
     levenshtein(&guess, &answer) <= threshold
 }
 
-/// Everything true about a character that makes a fair hint.
-pub fn hints(c: &Character) -> Vec<String> {
-    let mut out = Vec::new();
-    if c.homeworld != "unknown" {
-        out.push(format!("They come from {}.", c.homeworld));
-    }
-    out.push(match c.species.as_str() {
-        "Droid" => "They're a droid.".to_string(),
-        "Human" => "They're human.".to_string(),
-        s => format!("Species: {s}."),
-    });
-    out.push(format!("They first appear in {}.", c.film));
-    match c.vehicles {
-        0 => {}
-        1 => out.push("They've piloted one vehicle.".to_string()),
-        n => out.push(format!("They've piloted {n} vehicles.")),
-    }
-    match c.starships {
-        0 => {}
-        1 => out.push("They've flown one starship.".to_string()),
-        n => out.push(format!("They've flown {n} starships.")),
-    }
-    out
-}
-
 pub fn shuffle<T>(items: &mut [T], rng: &mut impl FnMut(usize) -> usize) {
     for i in (1..items.len()).rev() {
         items.swap(i, rng(i + 1));
@@ -318,14 +293,6 @@ mod tests {
         assert_eq!(Verdict::Correct.points(Mode::Padawan), 50);
         assert_eq!(Verdict::Correct.points(Mode::Master), 100);
         assert_eq!(Verdict::Close.points(Mode::Master), 75);
-    }
-
-    #[test]
-    fn hints_skip_unknown_homeworlds_and_zero_counts() {
-        let yoda = characters().iter().find(|c| c.name == "Yoda").unwrap();
-        let hints = hints(yoda);
-        assert!(hints.iter().all(|h| !h.contains("unknown")));
-        assert!(hints.iter().all(|h| !h.contains("piloted")));
     }
 
     #[test]

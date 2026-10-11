@@ -2,6 +2,7 @@ mod browser;
 mod components;
 mod data;
 mod game;
+mod hints;
 
 use components::{GameOver, Intro, Menu, Play, Starfield};
 use game::{HighScore, Mode};

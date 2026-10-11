@@ -1,7 +1,8 @@
 use super::sabers::Sabers;
 use crate::browser::random_index;
 use crate::data::characters;
-use crate::game::{Deck, Mode, STARTING_LIVES, Verdict, choices_for, hints, judge, tier_name};
+use crate::game::{Deck, Mode, STARTING_LIVES, Verdict, choices_for, judge, tier_name};
+use crate::hints::hints;
 use leptos::ev;
 use leptos::html;
 use leptos::prelude::*;
@@ -197,7 +198,7 @@ pub fn Play(
     let show_hint = move || {
         round.update(|r| {
             if r.hint.is_none() && !r.settled() {
-                let options = hints(&characters()[r.answer]);
+                let options = hints(&characters()[r.answer], characters());
                 r.hint = Some(options[random_index(options.len())].clone());
             }
         });
