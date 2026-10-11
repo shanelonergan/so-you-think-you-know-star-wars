@@ -56,17 +56,42 @@ impl Verdict {
     }
 }
 
-fn normalize(s: &str) -> String {
-    s.split_whitespace()
-        .collect::<Vec<_>>()
-        .join(" ")
-        .to_lowercase()
+/// Lowercase, with accents dropped, so "Padme" matches "Padmé".
+fn fold(s: &str) -> String {
+    s.to_lowercase()
+        .chars()
+        .map(|c| match c {
+            'á' | 'à' | 'â' | 'ä' => 'a',
+            'é' | 'è' | 'ê' | 'ë' => 'e',
+            'í' | 'ì' | 'î' | 'ï' => 'i',
+            'ó' | 'ò' | 'ô' | 'ö' => 'o',
+            'ú' | 'ù' | 'û' | 'ü' => 'u',
+            c => c,
+        })
+        .collect()
 }
 
-pub fn judge(guess: &str, answer: &str, mode: Mode) -> Verdict {
-    if normalize(guess) == normalize(answer) {
+/// For exact matches: letters and digits only, so "C3PO" is "C-3PO" and
+/// "Obi Wan" is "Obi-Wan".
+fn squash(s: &str) -> String {
+    fold(s).chars().filter(|c| c.is_alphanumeric()).collect()
+}
+
+/// For near misses: punctuation as spaces, runs of spaces collapsed.
+fn normalize(s: &str) -> String {
+    fold(s)
+        .split(|c: char| !c.is_alphanumeric())
+        .filter(|w| !w.is_empty())
+        .collect::<Vec<_>>()
+        .join(" ")
+}
+
+/// `names` are every name that counts: display name first, then aliases.
+pub fn judge(guess: &str, names: &[&str], mode: Mode) -> Verdict {
+    let squashed = squash(guess);
+    if names.iter().any(|n| squash(n) == squashed) {
         Verdict::Correct
-    } else if mode == Mode::Master && is_close_match(guess, answer) {
+    } else if mode == Mode::Master && names.iter().any(|n| is_close_match(guess, n)) {
         Verdict::Close
     } else {
         Verdict::Wrong
@@ -92,11 +117,11 @@ pub fn levenshtein(a: &str, b: &str) -> usize {
 /// Close but not exact: within 30% of the answer's length, and never more
 /// than three edits.
 pub fn is_close_match(guess: &str, answer: &str) -> bool {
-    let guess = normalize(guess);
-    let answer = normalize(answer);
-    if guess.is_empty() || guess == answer {
+    if squash(guess).is_empty() || squash(guess) == squash(answer) {
         return false;
     }
+    let guess = normalize(guess);
+    let answer = normalize(answer);
     let (g, a) = (guess.chars().count(), answer.chars().count());
     if g.abs_diff(a) > 3 {
         return false;
@@ -247,7 +272,7 @@ mod tests {
     #[test]
     fn exact_guesses_ignore_case_and_spacing() {
         assert_eq!(
-            judge("  luke   SKYWALKER ", "Luke Skywalker", Mode::Padawan),
+            judge("  luke   SKYWALKER ", &["Luke Skywalker"], Mode::Padawan),
             Verdict::Correct
         );
     }
@@ -255,13 +280,86 @@ mod tests {
     #[test]
     fn close_spelling_only_counts_in_master_mode() {
         assert_eq!(
-            judge("Obi-Wan Kenobee", "Obi-Wan Kenobi", Mode::Master),
+            judge("Obi-Wan Kenobee", &["Obi-Wan Kenobi"], Mode::Master),
             Verdict::Close
         );
         assert_eq!(
-            judge("Obi-Wan Kenobee", "Obi-Wan Kenobi", Mode::Padawan),
+            judge("Obi-Wan Kenobee", &["Obi-Wan Kenobi"], Mode::Padawan),
             Verdict::Wrong
         );
+    }
+
+    fn names_of(name: &str) -> Vec<&'static str> {
+        characters()
+            .iter()
+            .find(|c| c.name == name)
+            .unwrap()
+            .accepted_names()
+            .collect()
+    }
+
+    #[test]
+    fn colloquial_and_full_names_both_count() {
+        assert_eq!(
+            judge("Count Dooku", &names_of("Count Dooku"), Mode::Master),
+            Verdict::Correct
+        );
+        assert_eq!(
+            judge("dooku", &names_of("Count Dooku"), Mode::Master),
+            Verdict::Correct
+        );
+        assert_eq!(
+            judge(
+                "Jabba Desilijic Tiure",
+                &names_of("Jabba the Hutt"),
+                Mode::Master
+            ),
+            Verdict::Correct
+        );
+        assert_eq!(
+            judge("Chewie", &names_of("Chewbacca"), Mode::Master),
+            Verdict::Correct
+        );
+    }
+
+    #[test]
+    fn accents_and_punctuation_dont_matter() {
+        assert_eq!(
+            judge("padme amidala", &names_of("Padmé Amidala"), Mode::Master),
+            Verdict::Correct
+        );
+        assert_eq!(
+            judge("C3PO", &names_of("C-3PO"), Mode::Master),
+            Verdict::Correct
+        );
+        assert_eq!(
+            judge("obi wan kenobi", &names_of("Obi-Wan Kenobi"), Mode::Master),
+            Verdict::Correct
+        );
+    }
+
+    #[test]
+    fn misspelled_titles_are_close() {
+        assert_eq!(
+            judge("Admiral Akbar", &names_of("Admiral Ackbar"), Mode::Master),
+            Verdict::Close
+        );
+        assert_eq!(
+            judge("Jabba the Hut", &names_of("Jabba the Hutt"), Mode::Master),
+            Verdict::Close
+        );
+    }
+
+    #[test]
+    fn no_two_characters_share_an_accepted_name() {
+        let mut seen = std::collections::HashMap::new();
+        for c in characters() {
+            for n in c.accepted_names() {
+                if let Some(other) = seen.insert(squash(n), &c.name) {
+                    panic!("{n} names both {other} and {}", c.name);
+                }
+            }
+        }
     }
 
     #[test]
@@ -276,7 +374,7 @@ mod tests {
     #[test]
     fn far_guesses_are_wrong() {
         assert_eq!(
-            judge("Han Solo", "Leia Organa", Mode::Master),
+            judge("Han Solo", &["Leia Organa"], Mode::Master),
             Verdict::Wrong
         );
     }

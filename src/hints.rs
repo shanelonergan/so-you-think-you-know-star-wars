@@ -107,9 +107,7 @@ const MAX_PEOPLE_NAMED: usize = 2;
 /// Teachers and students players can be expected to know: anyone in the
 /// roster, plus these.
 const KNOWN_PEOPLE: &[&str] = &[
-    "Darth Sidious",
     "Darth Plagueis",
-    "Darth Tyranus",
     "Ahsoka Tano",
     "Asajj Ventress",
     "Savage Opress",
@@ -118,11 +116,31 @@ const KNOWN_PEOPLE: &[&str] = &[
     "Rey",
 ];
 
-/// Words in a name that would give it away. Titles everyone shares don't.
-fn name_words(name: &str) -> Vec<String> {
-    words(name)
-        .into_iter()
-        .filter(|w| w.chars().count() >= 3 && !matches!(w.as_str(), "the" | "darth"))
+/// Titles many characters share, which don't give anyone away.
+const TITLES: &[&str] = &[
+    "the",
+    "darth",
+    "count",
+    "general",
+    "admiral",
+    "emperor",
+    "captain",
+    "boss",
+    "chancellor",
+    "grand",
+    "moff",
+    "princess",
+    "queen",
+    "master",
+    "aunt",
+    "uncle",
+];
+
+/// Words in any of a character's names that would give them away.
+fn name_words(c: &Character) -> Vec<String> {
+    c.accepted_names()
+        .flat_map(words)
+        .filter(|w| w.chars().count() >= 3 && !TITLES.contains(&w.as_str()))
         .collect()
 }
 
@@ -154,7 +172,7 @@ fn article(noun: &str) -> &'static str {
 
 /// Everything true about a character that makes a fair hint.
 pub fn hints(c: &Character, roster: &[Character]) -> Vec<String> {
-    let name = name_words(&c.name);
+    let name = name_words(c);
     let mut out = Vec::new();
 
     if c.homeworld != "unknown" {
@@ -201,16 +219,20 @@ pub fn hints(c: &Character, roster: &[Character]) -> Vec<String> {
             .take(MAX_AFFILIATION_HINTS),
     );
 
-    let known = |p: &&String| {
-        (roster.iter().any(|r| &r.name == *p) || KNOWN_PEOPLE.contains(&p.as_str()))
-            && !gives_away(p, &name)
+    // Roster characters go by their display name: "Count Dooku", not "Dooku".
+    let known = |p: &String| -> Option<&str> {
+        let shown = roster
+            .iter()
+            .find(|r| r.accepted_names().any(|n| n == p))
+            .map(|r| r.name.as_str())
+            .or_else(|| KNOWN_PEOPLE.iter().find(|k| *k == p).copied())?;
+        (!gives_away(shown, &name) && !gives_away(p, &name)).then_some(shown)
     };
     let masters: Vec<&str> = c
         .masters
         .iter()
-        .filter(known)
+        .filter_map(known)
         .take(MAX_PEOPLE_NAMED)
-        .map(String::as_str)
         .collect();
     if !masters.is_empty() {
         out.push(format!("They were trained by {}.", join_names(&masters)));
@@ -218,9 +240,8 @@ pub fn hints(c: &Character, roster: &[Character]) -> Vec<String> {
     let apprentices: Vec<&str> = c
         .apprentices
         .iter()
-        .filter(known)
+        .filter_map(known)
         .take(MAX_PEOPLE_NAMED)
-        .map(String::as_str)
         .collect();
     if !apprentices.is_empty() {
         out.push(format!("They trained {}.", join_names(&apprentices)));
@@ -254,7 +275,7 @@ mod tests {
     #[test]
     fn no_hint_says_any_part_of_the_name() {
         for c in characters() {
-            let name = name_words(&c.name);
+            let name = name_words(c);
             for h in hints(c, characters()) {
                 assert!(!gives_away(&h, &name), "{}: {h}", c.name);
             }
@@ -315,18 +336,25 @@ mod tests {
     }
 
     #[test]
+    fn teachers_go_by_their_display_names() {
+        assert!(
+            hints_for("General Grievous")
+                .contains(&"They were trained by Count Dooku.".to_string())
+        );
+        assert!(
+            hints_for("Darth Maul")
+                .contains(&"They were trained by Emperor Palpatine.".to_string())
+        );
+    }
+
+    #[test]
     fn force_ghost_lessons_are_not_training() {
         assert!(hints_for("Yoda").iter().all(|h| !h.contains("trained by")));
     }
 
     #[test]
     fn the_empire_is_mentioned_only_when_it_defines_them() {
-        for name in [
-            "Padmé Amidala",
-            "Jar Jar Binks",
-            "Jabba Desilijic Tiure",
-            "C-3PO",
-        ] {
+        for name in ["Padmé Amidala", "Jar Jar Binks", "Jabba the Hutt", "C-3PO"] {
             assert!(
                 hints_for(name)
                     .iter()
@@ -335,13 +363,14 @@ mod tests {
             );
         }
         assert!(
-            hints_for("Wilhuff Tarkin").contains(&"They served the Galactic Empire.".to_string())
+            hints_for("Grand Moff Tarkin")
+                .contains(&"They served the Galactic Empire.".to_string())
         );
     }
 
     #[test]
     fn obscure_teachers_are_left_out() {
-        let palpatine = hints_for("Palpatine");
+        let palpatine = hints_for("Emperor Palpatine");
         assert!(
             palpatine
                 .iter()

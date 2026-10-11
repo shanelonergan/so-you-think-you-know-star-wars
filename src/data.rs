@@ -9,7 +9,11 @@ use std::sync::OnceLock;
 pub struct Character {
     /// SWAPI person id; also names the portrait file.
     pub id: u32,
+    /// What fans call them: "Count Dooku", not SWAPI's "Dooku".
     pub name: String,
+    /// Other names that count as a right answer, SWAPI's among them.
+    #[serde(default)]
+    pub aliases: Vec<String>,
     /// "unknown" when SWAPI doesn't know.
     pub homeworld: String,
     pub species: String,
@@ -56,6 +60,11 @@ pub enum Gender {
 }
 
 impl Character {
+    /// The display name, then every alias.
+    pub fn accepted_names(&self) -> impl Iterator<Item = &str> {
+        std::iter::once(self.name.as_str()).chain(self.aliases.iter().map(String::as_str))
+    }
+
     /// SWAPI portraits, mirrored on GitHub since starwars-visualguide.com shut down.
     pub fn portrait_url(&self) -> String {
         format!(

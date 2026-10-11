@@ -128,7 +128,10 @@ pub fn Play(
         let name = characters()[round.with_untracked(|r| r.answer)]
             .name
             .clone();
-        match judge(guessed, &name, mode) {
+        let accepted: Vec<&str> = characters()[round.with_untracked(|r| r.answer)]
+            .accepted_names()
+            .collect();
+        match judge(guessed, &accepted, mode) {
             verdict @ (Verdict::Correct | Verdict::Close) => {
                 score.update(|s| *s += verdict.points(mode));
                 round.update(|r| {
