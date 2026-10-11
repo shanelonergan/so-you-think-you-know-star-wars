@@ -1,7 +1,7 @@
 use super::sabers::Sabers;
 use crate::browser::random_index;
 use crate::data::characters;
-use crate::game::{Deck, Mode, STARTING_LIVES, Verdict, choices_for, hints, judge};
+use crate::game::{Deck, Mode, STARTING_LIVES, Verdict, choices_for, hints, judge, tier_name};
 use leptos::ev;
 use leptos::html;
 use leptos::prelude::*;
@@ -60,13 +60,13 @@ enum Portrait {
 
 impl Round {
     fn deal(number: u32, deck: &mut Deck) -> Self {
-        let size = characters().len();
+        let all = characters();
         let mut rng = random_index;
-        let answer = deck.draw(size, &mut rng);
+        let answer = deck.draw(all, number, &mut rng);
         Round {
             number,
             answer,
-            choices: choices_for(answer, size, &mut rng),
+            choices: choices_for(answer, all, &mut rng),
             wrong: Vec::new(),
             hint: None,
             outcome: None,
@@ -264,6 +264,7 @@ pub fn Play(
                 >
                     <figcaption class="cardback-top">
                         <span class="cardback-round">"Round "{move || round.with(|r| r.number)}</span>
+                        <span class="cardback-tier">{move || tier_name(character().tier)}</span>
                     </figcaption>
                     <div class="bubble">
                         {move || {

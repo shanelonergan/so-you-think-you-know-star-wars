@@ -587,6 +587,10 @@ button:disabled {
   font: 600 1.05rem/1 var(--display);
 }
 
+.cardback-tier {
+  color: var(--saber);
+}
+
 .bubble {
   position: relative;
   aspect-ratio: 400 / 550;

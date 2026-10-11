@@ -1,7 +1,7 @@
 //! Game rules, with no browser or UI types, so they run under `cargo test`.
 //! Randomness comes in as a closure returning an index below its argument.
 
-use crate::data::Character;
+use crate::data::{Character, Gender};
 use serde::{Deserialize, Serialize};
 
 pub const STARTING_LIVES: u32 = 3;
@@ -136,27 +136,88 @@ pub fn shuffle<T>(items: &mut [T], rng: &mut impl FnMut(usize) -> usize) {
     }
 }
 
-/// Deals every character once before any repeats.
-#[derive(Clone, Debug, Default)]
-pub struct Deck {
-    remaining: Vec<usize>,
-}
+/// Rounds before this one deal famous characters; from here, fan favourites.
+pub const FAN_FAVOURITES_FROM_ROUND: u32 = 9;
+/// From this round on, deep cuts.
+pub const DEEP_CUTS_FROM_ROUND: u32 = 19;
 
-impl Deck {
-    pub fn draw(&mut self, size: usize, rng: &mut impl FnMut(usize) -> usize) -> usize {
-        if self.remaining.is_empty() {
-            self.remaining = (0..size).collect();
-            shuffle(&mut self.remaining, rng);
-        }
-        self.remaining.pop().expect("deck refilled")
+/// Which tier a round deals from: the game gets harder as it goes.
+pub fn tier_for_round(round: u32) -> u8 {
+    match round {
+        r if r >= DEEP_CUTS_FROM_ROUND => 3,
+        r if r >= FAN_FAVOURITES_FROM_ROUND => 2,
+        _ => 1,
     }
 }
 
-/// The answer plus three other characters, in random order.
-pub fn choices_for(answer: usize, size: usize, rng: &mut impl FnMut(usize) -> usize) -> Vec<usize> {
-    let mut others: Vec<usize> = (0..size).filter(|&i| i != answer).collect();
-    shuffle(&mut others, rng);
-    let mut picked: Vec<usize> = others.into_iter().take(CHOICES - 1).collect();
+pub fn tier_name(tier: u8) -> &'static str {
+    match tier {
+        1 => "Famous",
+        2 => "Fan favourite",
+        _ => "Deep cut",
+    }
+}
+
+/// One shuffled pile per tier. Deals every character once before any repeats.
+#[derive(Clone, Debug, Default)]
+pub struct Deck {
+    piles: [Vec<usize>; 3],
+}
+
+impl Deck {
+    /// Deals from the round's tier. If that pile has run out, the next harder
+    /// tier, then easier ones; once every pile is empty, all three reshuffle.
+    pub fn draw(
+        &mut self,
+        all: &[Character],
+        round: u32,
+        rng: &mut impl FnMut(usize) -> usize,
+    ) -> usize {
+        if self.piles.iter().all(Vec::is_empty) {
+            for (t, pile) in self.piles.iter_mut().enumerate() {
+                *pile = (0..all.len())
+                    .filter(|&i| usize::from(all[i].tier) == t + 1)
+                    .collect();
+                shuffle(pile, rng);
+            }
+        }
+        let want = usize::from(tier_for_round(round)) - 1;
+        let order = (want..3).chain((0..want).rev());
+        for t in order {
+            if let Some(i) = self.piles[t].pop() {
+                return i;
+            }
+        }
+        unreachable!("piles were refilled")
+    }
+}
+
+/// The answer plus three others who could pass for them at a glance: same
+/// kind (human, droid, alien), same gender when there are enough, and as
+/// close to the answer's tier as possible. In random order.
+pub fn choices_for(
+    answer: usize,
+    all: &[Character],
+    rng: &mut impl FnMut(usize) -> usize,
+) -> Vec<usize> {
+    let a = &all[answer];
+    let others = |same_gender: bool| -> Vec<usize> {
+        (0..all.len())
+            .filter(|&i| i != answer && all[i].kind == a.kind)
+            .filter(|&i| !same_gender || (a.gender != Gender::Other && all[i].gender == a.gender))
+            .collect()
+    };
+    let mut pool = others(true);
+    if pool.len() < CHOICES - 1 {
+        pool = others(false);
+    }
+    if pool.len() < CHOICES - 1 {
+        pool = (0..all.len()).filter(|&i| i != answer).collect();
+    }
+    shuffle(&mut pool, rng);
+    // Stable sort keeps the shuffle's randomness within each distance.
+    pool.sort_by_key(|&i| all[i].tier.abs_diff(a.tier));
+    let mut picked: Vec<usize> = pool.into_iter().take(CHOICES - 1).collect();
     picked.push(answer);
     shuffle(&mut picked, rng);
     picked
@@ -271,21 +332,69 @@ mod tests {
     fn deck_deals_everyone_before_repeating() {
         let mut rng = counter();
         let mut deck = Deck::default();
-        let mut seen: Vec<usize> = (0..82).map(|_| deck.draw(82, &mut rng)).collect();
+        let all = characters();
+        let mut seen: Vec<usize> = (1..=82)
+            .map(|round| deck.draw(all, round, &mut rng))
+            .collect();
         seen.sort_unstable();
         assert_eq!(seen, (0..82).collect::<Vec<_>>());
+    }
+
+    #[test]
+    fn rounds_get_harder() {
+        let mut rng = counter();
+        let mut deck = Deck::default();
+        let all = characters();
+        for round in 1..=30 {
+            let c = &all[deck.draw(all, round, &mut rng)];
+            assert_eq!(c.tier, tier_for_round(round), "round {round}: {}", c.name);
+        }
+    }
+
+    #[test]
+    fn an_empty_tier_falls_through_to_a_harder_one() {
+        let mut rng = counter();
+        let mut deck = Deck::default();
+        let all = characters();
+        let famous = all.iter().filter(|c| c.tier == 1).count();
+        for _ in 0..famous {
+            deck.draw(all, 1, &mut rng);
+        }
+        assert_eq!(all[deck.draw(all, 1, &mut rng)].tier, 2);
     }
 
     #[test]
     fn choices_hold_the_answer_once_among_four_distinct() {
         let mut rng = counter();
         for answer in 0..82 {
-            let mut c = choices_for(answer, 82, &mut rng);
+            let mut c = choices_for(answer, characters(), &mut rng);
             assert_eq!(c.len(), 4);
             assert_eq!(c.iter().filter(|&&i| i == answer).count(), 1);
             c.sort_unstable();
             c.dedup();
             assert_eq!(c.len(), 4);
+        }
+    }
+
+    #[test]
+    fn choices_look_like_the_answer() {
+        let mut rng = counter();
+        let all = characters();
+        for answer in 0..all.len() {
+            for c in choices_for(answer, all, &mut rng) {
+                assert_eq!(
+                    all[c].kind, all[answer].kind,
+                    "{} offered for {}",
+                    all[c].name, all[answer].name
+                );
+                if all[answer].gender != Gender::Other {
+                    assert_eq!(
+                        all[c].gender, all[answer].gender,
+                        "{} offered for {}",
+                        all[c].name, all[answer].name
+                    );
+                }
+            }
         }
     }
 

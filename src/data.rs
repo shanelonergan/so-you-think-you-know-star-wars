@@ -17,6 +17,29 @@ pub struct Character {
     pub film: String,
     pub vehicles: u32,
     pub starships: u32,
+    pub kind: Kind,
+    pub gender: Gender,
+    /// How well known they are: 1 famous, 2 fan favourite, 3 deep cut.
+    /// A judgment call, made by hand in `data/characters.json`.
+    pub tier: u8,
+}
+
+/// What they look like at a glance, so multiple choice never pairs a face
+/// with names that are obviously the wrong kind of being.
+#[derive(Clone, Copy, Debug, Deserialize, PartialEq, Eq)]
+#[serde(rename_all = "lowercase")]
+pub enum Kind {
+    Human,
+    Droid,
+    Alien,
+}
+
+#[derive(Clone, Copy, Debug, Deserialize, PartialEq, Eq)]
+#[serde(rename_all = "lowercase")]
+pub enum Gender {
+    Male,
+    Female,
+    Other,
 }
 
 impl Character {
@@ -49,5 +72,20 @@ mod tests {
         ids.sort_unstable();
         ids.dedup();
         assert_eq!(ids.len(), all.len());
+    }
+
+    #[test]
+    fn every_tier_is_used_and_droids_are_droids() {
+        let all = characters();
+        for tier in 1..=3 {
+            assert!(all.iter().any(|c| c.tier == tier));
+        }
+        assert!(all.iter().all(|c| (1..=3).contains(&c.tier)));
+        let droids: Vec<&str> = all
+            .iter()
+            .filter(|c| c.kind == Kind::Droid)
+            .map(|c| c.name.as_str())
+            .collect();
+        assert_eq!(droids, ["C-3PO", "R2-D2", "R5-D4", "IG-88", "R4-P17"]);
     }
 }
