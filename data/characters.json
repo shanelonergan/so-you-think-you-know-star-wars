@@ -1,0 +1,1907 @@
+[
+ {
+  "id": 1,
+  "name": "Luke Skywalker",
+  "aliases": [],
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 2,
+  "starships": 2,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Alliance to Restore the Republic",
+   "Red Squadron",
+   "Rogue Squadron",
+   "Massassi Group",
+   "Leia Organa's team",
+   "Endor strike team",
+   "Jedi Order",
+   "Bright Tree tribe",
+   "New Republic",
+   "Resistance"
+  ],
+  "masters": [
+   "Obi-Wan Kenobi",
+   "Yoda"
+  ],
+  "apprentices": [
+   "Leia Organa",
+   "Ben Solo",
+   "Rey"
+  ]
+ },
+ {
+  "id": 2,
+  "name": "C-3PO",
+  "aliases": [
+   "Threepio"
+  ],
+  "homeworld": "Tatooine",
+  "species": "Droid",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "droid",
+  "gender": "other",
+  "tier": 1,
+  "affiliations": [
+   "Skywalker family",
+   "Confederacy of Independent Systems",
+   "Royal House of Naboo",
+   "Galactic Republic",
+   "House of Organa",
+   "Galactic Empire",
+   "Alliance to Restore the Republic",
+   "Massassi Group",
+   "Leia Organa's team",
+   "Pathfinders",
+   "Endor strike team",
+   "Bright Tree tribe",
+   "New Republic",
+   "Resistance",
+   "Resistance spy droid network"
+  ],
+  "masters": [],
+  "apprentices": [],
+  "droid_class": "Protocol droid",
+  "manufacturer": "Cybot Galactica"
+ },
+ {
+  "id": 3,
+  "name": "R2-D2",
+  "aliases": [
+   "Artoo"
+  ],
+  "homeworld": "Naboo",
+  "species": "Droid",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "droid",
+  "gender": "other",
+  "tier": 1,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Galactic Republic",
+   "501st Legion",
+   "R2-D2's battle droid squadron",
+   "D-Squad",
+   "House of Organa",
+   "Galactic Empire",
+   "Alliance to Restore the Republic",
+   "Massassi Group",
+   "Red Squadron",
+   "Leia Organa's team",
+   "Endor strike team",
+   "Bright Tree tribe",
+   "Resistance"
+  ],
+  "masters": [],
+  "apprentices": [],
+  "droid_class": "Astromech droid",
+  "manufacturer": "Industrial Automaton"
+ },
+ {
+  "id": 4,
+  "name": "Darth Vader",
+  "aliases": [],
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 1,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "501st Legion",
+   "Sith",
+   "Galactic Empire",
+   "Imperial High Command"
+  ],
+  "masters": [
+   "Qui-Gon Jinn",
+   "Obi-Wan Kenobi",
+   "Darth Sidious"
+  ],
+  "apprentices": [
+   "Ahsoka Tano",
+   "Inquisitorius"
+  ]
+ },
+ {
+  "id": 5,
+  "name": "Leia Organa",
+  "aliases": [
+   "Princess Leia"
+  ],
+  "homeworld": "Alderaan",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 1,
+  "starships": 0,
+  "kind": "human",
+  "gender": "female",
+  "tier": 1,
+  "affiliations": [
+   "Elder Houses",
+   "House of Organa",
+   "Galactic Empire",
+   "Imperial Senate",
+   "Alliance to Restore the Republic",
+   "Massassi Group",
+   "Leia Organa's team",
+   "Endor strike team",
+   "Alliance High Command",
+   "Bright Tree tribe",
+   "New Republic",
+   "Populists",
+   "Resistance"
+  ],
+  "masters": [
+   "Luke Skywalker"
+  ],
+  "apprentices": []
+ },
+ {
+  "id": 6,
+  "name": "Owen Lars",
+  "aliases": [
+   "Uncle Owen"
+  ],
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Lars family"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 7,
+  "name": "Beru Lars",
+  "aliases": [
+   "Aunt Beru",
+   "Beru Whitesun Lars"
+  ],
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "female",
+  "tier": 2,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 8,
+  "name": "R5-D4",
+  "aliases": [],
+  "homeworld": "Tatooine",
+  "species": "Droid",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "droid",
+  "gender": "other",
+  "tier": 3,
+  "affiliations": [
+   "Alliance to Restore the Republic"
+  ],
+  "masters": [],
+  "apprentices": [],
+  "droid_class": "Astromech droid",
+  "manufacturer": "Industrial Automaton"
+ },
+ {
+  "id": 9,
+  "name": "Biggs Darklighter",
+  "aliases": [],
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 1,
+  "kind": "human",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Galactic Empire",
+   "Prefsbelt Fleet Camp",
+   "Alliance to Restore the Republic",
+   "Red Squadron",
+   "Massassi Group"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 10,
+  "name": "Obi-Wan Kenobi",
+  "aliases": [
+   "Ben Kenobi"
+  ],
+  "homeworld": "Stewjon",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 1,
+  "starships": 5,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Galactic Republic",
+   "212th Attack Battalion",
+   "Alliance to Restore the Republic"
+  ],
+  "masters": [
+   "Qui-Gon Jinn",
+   "Yoda"
+  ],
+  "apprentices": [
+   "Anakin Skywalker",
+   "Luke Skywalker"
+  ]
+ },
+ {
+  "id": 11,
+  "name": "Anakin Skywalker",
+  "aliases": [],
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 2,
+  "starships": 3,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "501st Legion",
+   "Sith",
+   "Galactic Empire",
+   "Imperial High Command"
+  ],
+  "masters": [
+   "Qui-Gon Jinn",
+   "Obi-Wan Kenobi",
+   "Darth Sidious"
+  ],
+  "apprentices": [
+   "Ahsoka Tano",
+   "Inquisitorius"
+  ]
+ },
+ {
+  "id": 12,
+  "name": "Grand Moff Tarkin",
+  "aliases": [
+   "Wilhuff Tarkin",
+   "Tarkin"
+  ],
+  "homeworld": "Eriadu",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Galactic Republic",
+   "Sullust Sector Spacefarers Academy",
+   "Judicial Forces",
+   "Republic Navy",
+   "Strategic Advisory Cell",
+   "Outland Regions Security Force",
+   "Outland's anti-pirate taskforce",
+   "Galactic Empire",
+   "Battle Station Command",
+   "Imperial Officer Corps",
+   "Imperial Navy",
+   "Tarkin Initiative"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 13,
+  "name": "Chewbacca",
+  "aliases": [
+   "Chewie"
+  ],
+  "homeworld": "Kashyyyk",
+  "species": "Wookiee",
+  "film": "A New Hope",
+  "vehicles": 1,
+  "starships": 2,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Galactic Republic",
+   "Alliance to Restore the Republic",
+   "Leia Organa's team",
+   "Pathfinders",
+   "Endor strike team",
+   "Bright Tree tribe",
+   "New Republic",
+   "Resistance"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 14,
+  "name": "Han Solo",
+  "aliases": [],
+  "homeworld": "Corellia",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 2,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Galactic Empire",
+   "Jabba Desilijic Tiure's criminal empire",
+   "Alliance to Restore the Republic",
+   "Leia Organa's team",
+   "Endor strike team",
+   "Kingdom of Han",
+   "Bright Tree tribe",
+   "New Republic",
+   "New Republic Pilots Commission",
+   "Han Solo's shipping company",
+   "Resistance"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 15,
+  "name": "Greedo",
+  "aliases": [],
+  "homeworld": "Rodia",
+  "species": "Rodian",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Trade Federation"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 16,
+  "name": "Jabba the Hutt",
+  "aliases": [
+   "Jabba Desilijic Tiure",
+   "Jabba"
+  ],
+  "homeworld": "Nal Hutta",
+  "species": "Hutt",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "other",
+  "tier": 1,
+  "affiliations": [
+   "Hutt Clan",
+   "Grand Hutt Council",
+   "Jabba Desilijic Tiure's criminal empire",
+   "Galactic Republic",
+   "Shadow Collective",
+   "Crymorah syndicate",
+   "Galactic Empire"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 18,
+  "name": "Wedge Antilles",
+  "aliases": [],
+  "homeworld": "Corellia",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 1,
+  "starships": 1,
+  "kind": "human",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Galactic Empire",
+   "Alliance to Restore the Republic",
+   "Phoenix Cell",
+   "Massassi Group",
+   "Red Squadron",
+   "Rogue Squadron",
+   "New Republic",
+   "Phantom Squadron"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 19,
+  "name": "Jek Porkins",
+  "aliases": [
+   "Jek Tono Porkins",
+   "Porkins"
+  ],
+  "homeworld": "Bestine IV",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 1,
+  "kind": "human",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Alliance to Restore the Republic",
+   "Tierfon Yellow Aces",
+   "Red Squadron",
+   "Massassi Group"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 20,
+  "name": "Yoda",
+  "aliases": [
+   "Master Yoda"
+  ],
+  "homeworld": "unknown",
+  "species": "Yoda's species",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [
+   "Garro"
+  ],
+  "apprentices": [
+   "Dooku",
+   "Obi-Wan Kenobi",
+   "Luke Skywalker"
+  ]
+ },
+ {
+  "id": 21,
+  "name": "Emperor Palpatine",
+  "aliases": [
+   "Palpatine",
+   "Darth Sidious",
+   "Sheev Palpatine"
+  ],
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "House Palpatine",
+   "Damask Holdings",
+   "Royal House of Naboo",
+   "Sith",
+   "Order of the Sith Lords",
+   "Naboo Diplomatic Corps",
+   "Galactic Republic",
+   "Galactic Senate",
+   "Trade Federation",
+   "Confederacy of Independent Systems",
+   "Galactic Empire",
+   "Dark Empire"
+  ],
+  "masters": [
+   "Darth Plagueis"
+  ],
+  "apprentices": [
+   "Darth Maul",
+   "A Nikto",
+   "Vergere",
+   "Darth Tyranus",
+   "Garth Ezzar",
+   "Darth Vader",
+   "Ferus Olin",
+   "Mara Jade",
+   "Cronal",
+   "Lumiya",
+   "Luke Skywalker"
+  ]
+ },
+ {
+  "id": 22,
+  "name": "Boba Fett",
+  "aliases": [],
+  "homeworld": "Kamino",
+  "species": "Human",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 1,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Confederacy of Independent Systems",
+   "Boba Fett's syndicate",
+   "Jabba Desilijic Tiure's criminal empire",
+   "Galactic Empire"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 23,
+  "name": "IG-88",
+  "aliases": [],
+  "homeworld": "unknown",
+  "species": "Droid",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "droid",
+  "gender": "other",
+  "tier": 2,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": [],
+  "droid_class": "Assassin droid",
+  "manufacturer": "Holowan Laboratories"
+ },
+ {
+  "id": 24,
+  "name": "Bossk",
+  "aliases": [],
+  "homeworld": "Trandosha",
+  "species": "Trandoshan",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Bounty Hunters' Guild",
+   "Boba Fett's syndicate",
+   "Galactic Empire",
+   "Chelli Aphra's crew"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 25,
+  "name": "Lando Calrissian",
+  "aliases": [],
+  "homeworld": "Socorro",
+  "species": "Human",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 1,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Cloud City colony",
+   "Galactic Empire",
+   "Alliance to Restore the Republic",
+   "Gold Squadron",
+   "New Republic",
+   "New Republic military",
+   "Uprising",
+   "Calrissian Enterprises"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 26,
+  "name": "Lobot",
+  "aliases": [],
+  "homeworld": "Bespin",
+  "species": "Human",
+  "film": "The Empire Strikes Back",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Galactic Empire",
+   "Imperial Military",
+   "Cloud City",
+   "Alliance to Restore the Republic",
+   "New Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 27,
+  "name": "Admiral Ackbar",
+  "aliases": [
+   "Ackbar"
+  ],
+  "homeworld": "Mon Cala",
+  "species": "Mon Calamari",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Mon Cala monarchy",
+   "Mon Calamari Guard",
+   "Galactic Republic",
+   "Galactic Empire",
+   "Alliance to Restore the Republic",
+   "Alliance Fleet",
+   "Alliance High Command",
+   "New Republic",
+   "New Republic Defense Fleet",
+   "Resistance",
+   "Resistance High Command",
+   "Resistance Fleet Command",
+   "Resistance navy"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 28,
+  "name": "Mon Mothma",
+  "aliases": [],
+  "homeworld": "Chandrila",
+  "species": "Human",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "female",
+  "tier": 2,
+  "affiliations": [
+   "Galactic Republic",
+   "Loyalist Committee",
+   "Delegation of 2,000",
+   "Galactic Empire",
+   "Imperial Senate",
+   "Mon Mothma's rebel cell",
+   "Alliance to Restore the Republic",
+   "New Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 29,
+  "name": "Arvel Crynyd",
+  "aliases": [],
+  "homeworld": "unknown",
+  "species": "Human",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 1,
+  "kind": "human",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Alliance to Restore the Republic",
+   "Green Squadron"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 30,
+  "name": "Wicket",
+  "aliases": [
+   "Wicket Systri Warrick",
+   "Wicket W. Warrick"
+  ],
+  "homeworld": "Endor",
+  "species": "Ewok",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Bright Tree tribe",
+   "Alliance to Restore the Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 31,
+  "name": "Nien Nunb",
+  "aliases": [],
+  "homeworld": "Sullust",
+  "species": "Sullustan",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 1,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "House of Organa",
+   "Alliance to Restore the Republic",
+   "Gold Squadron",
+   "New Republic",
+   "Resistance",
+   "Red Squadron"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 32,
+  "name": "Qui-Gon Jinn",
+  "aliases": [],
+  "homeworld": "unknown",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 1,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Jedi Order",
+   "Galactic Republic"
+  ],
+  "masters": [
+   "Dooku"
+  ],
+  "apprentices": [
+   "Obi-Wan Kenobi",
+   "Anakin Skywalker"
+  ]
+ },
+ {
+  "id": 33,
+  "name": "Nute Gunray",
+  "aliases": [],
+  "homeworld": "Cato Neimoidia",
+  "species": "Neimoidian",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Trade Federation",
+   "Confederacy of Independent Systems",
+   "Separatist Council"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 34,
+  "name": "Chancellor Valorum",
+  "aliases": [
+   "Finis Valorum",
+   "Valorum"
+  ],
+  "homeworld": "Coruscant",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "House Valorum",
+   "Galactic Republic",
+   "Galactic Senate"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 35,
+  "name": "Padmé Amidala",
+  "aliases": [
+   "Queen Amidala"
+  ],
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 3,
+  "kind": "human",
+  "gender": "female",
+  "tier": 1,
+  "affiliations": [
+   "Apprentice Legislators",
+   "Legislative Youth Program",
+   "Royal House of Naboo",
+   "Galactic Republic",
+   "Loyalist Committee",
+   "Delegation of 2,000",
+   "Galactic Empire",
+   "Imperial Senate"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 36,
+  "name": "Jar Jar Binks",
+  "aliases": [
+   "Jar Jar"
+  ],
+  "homeworld": "Naboo",
+  "species": "Gungan",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Gungan High Council",
+   "Officer corps",
+   "Galactic Republic",
+   "Naboo delegation",
+   "Galactic Empire",
+   "Imperial Senate"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 37,
+  "name": "Captain Tarpals",
+  "aliases": [
+   "Roos Tarpals",
+   "Tarpals"
+  ],
+  "homeworld": "Naboo",
+  "species": "Gungan",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Gungan Grand Army"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 38,
+  "name": "Boss Nass",
+  "aliases": [
+   "Rugor Nass"
+  ],
+  "homeworld": "Naboo",
+  "species": "Gungan",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Gungan High Council"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 39,
+  "name": "Ric Olié",
+  "aliases": [],
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 1,
+  "kind": "human",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Royal Naboo Security Forces",
+   "Bravo Flight"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 40,
+  "name": "Watto",
+  "aliases": [],
+  "homeworld": "Toydaria",
+  "species": "Toydarian",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Watto's shop",
+   "Mos Espa"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 41,
+  "name": "Sebulba",
+  "aliases": [],
+  "homeworld": "Malastare",
+  "species": "Dug",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 42,
+  "name": "Captain Panaka",
+  "aliases": [
+   "Quarsh Panaka",
+   "Panaka"
+  ],
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Royal Naboo Security Forces",
+   "Galactic Republic",
+   "Republic Special Task Force",
+   "Galactic Empire"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 43,
+  "name": "Shmi Skywalker",
+  "aliases": [],
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "female",
+  "tier": 2,
+  "affiliations": [
+   "Skywalker family",
+   "Lars family"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 44,
+  "name": "Darth Maul",
+  "aliases": [
+   "Maul"
+  ],
+  "homeworld": "Dathomir",
+  "species": "Zabrak",
+  "film": "The Phantom Menace",
+  "vehicles": 1,
+  "starships": 1,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Nightbrothers",
+   "Sith",
+   "Cad Bane's group",
+   "Death Watch",
+   "Shadow Collective"
+  ],
+  "masters": [
+   "Darth Sidious"
+  ],
+  "apprentices": [
+   "Savage Opress"
+  ]
+ },
+ {
+  "id": 45,
+  "name": "Bib Fortuna",
+  "aliases": [],
+  "homeworld": "Ryloth",
+  "species": "Twi'lek",
+  "film": "Return of the Jedi",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Fortuna family",
+   "Jabba Desilijic Tiure's criminal empire"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 46,
+  "name": "Ayla Secura",
+  "aliases": [],
+  "homeworld": "Ryloth",
+  "species": "Twi'lek",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "female",
+  "tier": 2,
+  "affiliations": [
+   "Jedi Order",
+   "Galactic Republic"
+  ],
+  "masters": [
+   "Quinlan Vos",
+   "Volfe Karkko",
+   "Tholme"
+  ],
+  "apprentices": []
+ },
+ {
+  "id": 47,
+  "name": "Ratts Tyerel",
+  "aliases": [
+   "Ratts Tyerell"
+  ],
+  "homeworld": "Aleen Minor",
+  "species": "Aleena",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 48,
+  "name": "Dud Bolt",
+  "aliases": [],
+  "homeworld": "Vulpter",
+  "species": "Vulptereen",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 49,
+  "name": "Gasgano",
+  "aliases": [],
+  "homeworld": "Troiken",
+  "species": "Xexto",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 50,
+  "name": "Ben Quadinaros",
+  "aliases": [],
+  "homeworld": "Tund",
+  "species": "Toong",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 51,
+  "name": "Mace Windu",
+  "aliases": [],
+  "homeworld": "Haruun Kal",
+  "species": "Human",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Mace Windu's squad",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [
+   "Cyslin Myr"
+  ],
+  "apprentices": [
+   "Depa Billaba"
+  ]
+ },
+ {
+  "id": 52,
+  "name": "Ki-Adi-Mundi",
+  "aliases": [],
+  "homeworld": "Cerea",
+  "species": "Cerean",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic",
+   "Galactic Marines"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 53,
+  "name": "Kit Fisto",
+  "aliases": [],
+  "homeworld": "Glee Anselm",
+  "species": "Nautolan",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Mace Windu's squad",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": [
+   "Nahdar Vebb"
+  ]
+ },
+ {
+  "id": 54,
+  "name": "Eeth Koth",
+  "aliases": [],
+  "homeworld": "Iridonia",
+  "species": "Zabrak",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 55,
+  "name": "Adi Gallia",
+  "aliases": [],
+  "homeworld": "Coruscant",
+  "species": "Tholothian",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "female",
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 56,
+  "name": "Saesee Tiin",
+  "aliases": [],
+  "homeworld": "Iktotch",
+  "species": "Iktotchi",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 57,
+  "name": "Yarael Poof",
+  "aliases": [],
+  "homeworld": "Quermia",
+  "species": "Quermian",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 58,
+  "name": "Plo Koon",
+  "aliases": [],
+  "homeworld": "Dorin",
+  "species": "Kel Dor",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 1,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic",
+   "104th Battalion"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 59,
+  "name": "Mas Amedda",
+  "aliases": [],
+  "homeworld": "Champala",
+  "species": "Chagrian",
+  "film": "The Phantom Menace",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic",
+   "Galactic Senate",
+   "Office of the Chancellor",
+   "Strategic Advisory Cell",
+   "Galactic Empire",
+   "Imperial Ruling Council",
+   "Coruscant provisional government"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 60,
+  "name": "Captain Typho",
+  "aliases": [
+   "Gregar Typho",
+   "Typho"
+  ],
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 1,
+  "kind": "human",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Royal Naboo Security Forces",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 61,
+  "name": "Cordé",
+  "aliases": [],
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "female",
+  "tier": 3,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Naboo Royal Handmaidens",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 62,
+  "name": "Cliegg Lars",
+  "aliases": [],
+  "homeworld": "Tatooine",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Lars family"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 63,
+  "name": "Poggle the Lesser",
+  "aliases": [],
+  "homeworld": "Geonosis",
+  "species": "Geonosian",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Stalgasin hive",
+   "Karina the Great's empire",
+   "Techno Union",
+   "Confederacy of Independent Systems",
+   "Separatist Council",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 64,
+  "name": "Luminara Unduli",
+  "aliases": [],
+  "homeworld": "Mirial",
+  "species": "Mirialan",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "female",
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi assault team",
+   "Galactic Republic",
+   "41st Elite Corps"
+  ],
+  "masters": [],
+  "apprentices": [
+   "Barriss Offee"
+  ]
+ },
+ {
+  "id": 65,
+  "name": "Barriss Offee",
+  "aliases": [],
+  "homeworld": "Mirial",
+  "species": "Mirialan",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "female",
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi assault team",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [
+   "Luminara Unduli"
+  ],
+  "apprentices": []
+ },
+ {
+  "id": 66,
+  "name": "Dormé",
+  "aliases": [],
+  "homeworld": "Naboo",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "female",
+  "tier": 3,
+  "affiliations": [
+   "Royal House of Naboo",
+   "Naboo Royal Handmaidens",
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 67,
+  "name": "Count Dooku",
+  "aliases": [
+   "Dooku",
+   "Darth Tyranus"
+  ],
+  "homeworld": "Serenno",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 1,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "House of Dooku",
+   "Lost Twenty",
+   "Sith",
+   "Independent Movement for Self-Determination",
+   "Confederacy of Independent Systems"
+  ],
+  "masters": [
+   "Yoda",
+   "Darth Sidious"
+  ],
+  "apprentices": [
+   "Qui-Gon Jinn",
+   "Grievous",
+   "Asajj Ventress",
+   "Savage Opress",
+   "Quinlan Vos"
+  ]
+ },
+ {
+  "id": 68,
+  "name": "Bail Organa",
+  "aliases": [
+   "Bail Prestor Organa"
+  ],
+  "homeworld": "Alderaan",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "House of Organa",
+   "High Court of Alderaan",
+   "Galactic Republic",
+   "Galactic Senate",
+   "Loyalist Committee",
+   "Security Committee",
+   "Delegation of 2000",
+   "Galactic Empire",
+   "Imperial Senate",
+   "Finance Committee",
+   "Appropriations Committee",
+   "Intelligence Oversight Committee",
+   "Military Oversight Committee",
+   "Alderaanian Resistance",
+   "Kota's Militia",
+   "Alliance to Restore the Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 69,
+  "name": "Jango Fett",
+  "aliases": [],
+  "homeworld": "Concord Dawn",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Confederacy of Independent Systems",
+   "Tyranus"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 70,
+  "name": "Zam Wesell",
+  "aliases": [],
+  "homeworld": "Zolan",
+  "species": "Clawdite",
+  "film": "Attack of the Clones",
+  "vehicles": 1,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "female",
+  "tier": 2,
+  "affiliations": [
+   "Mabari",
+   "Confederacy of Independent Systems"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 71,
+  "name": "Dexter Jettster",
+  "aliases": [],
+  "homeworld": "Ojom",
+  "species": "Besalisk",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 2,
+  "affiliations": [
+   "Dex's Diner"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 72,
+  "name": "Lama Su",
+  "aliases": [],
+  "homeworld": "Kamino",
+  "species": "Kaminoan",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 73,
+  "name": "Taun We",
+  "aliases": [],
+  "homeworld": "Kamino",
+  "species": "Kaminoan",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "female",
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 74,
+  "name": "Jocasta Nu",
+  "aliases": [],
+  "homeworld": "Coruscant",
+  "species": "Human",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "female",
+  "tier": 3,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 75,
+  "name": "R4-P17",
+  "aliases": [],
+  "homeworld": "unknown",
+  "species": "Droid",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "droid",
+  "gender": "other",
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": [],
+  "droid_class": "Astromech droid",
+  "manufacturer": "Industrial Automaton"
+ },
+ {
+  "id": 76,
+  "name": "Wat Tambor",
+  "aliases": [],
+  "homeworld": "Skako",
+  "species": "Skakoan",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Techno Union",
+   "Baktoid Armor Workshop",
+   "Confederacy of Independent Systems",
+   "Separatist Council"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 77,
+  "name": "San Hill",
+  "aliases": [],
+  "homeworld": "Muunilinst",
+  "species": "Muun",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "InterGalactic Banking Clan",
+   "Muunilinst Banking Clan",
+   "Confederacy of Independent Systems",
+   "Separatist Council"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 78,
+  "name": "Shaak Ti",
+  "aliases": [],
+  "homeworld": "Shili",
+  "species": "Togruta",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "female",
+  "tier": 2,
+  "affiliations": [
+   "Jedi Order",
+   "Jedi High Council",
+   "Jedi assault team",
+   "Galactic Republic",
+   "Grand Army of the Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 79,
+  "name": "General Grievous",
+  "aliases": [
+   "Grievous"
+  ],
+  "homeworld": "Kalee",
+  "species": "Kaleesh",
+  "film": "Revenge of the Sith",
+  "vehicles": 1,
+  "starships": 1,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 1,
+  "affiliations": [
+   "Confederacy of Independent Systems",
+   "Separatist Droid Army"
+  ],
+  "masters": [
+   "Dooku"
+  ],
+  "apprentices": []
+ },
+ {
+  "id": 80,
+  "name": "Tarfful",
+  "aliases": [],
+  "homeworld": "Kashyyyk",
+  "species": "Wookiee",
+  "film": "Revenge of the Sith",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 81,
+  "name": "Captain Antilles",
+  "aliases": [
+   "Raymus Antilles"
+  ],
+  "homeworld": "Alderaan",
+  "species": "Human",
+  "film": "A New Hope",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "human",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "House of Organa",
+   "Alliance to Restore the Republic",
+   "Alliance Military"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 82,
+  "name": "Sly Moore",
+  "aliases": [],
+  "homeworld": "Umbara",
+  "species": "Umbaran",
+  "film": "Attack of the Clones",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "female",
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic",
+   "Office of the Chancellor",
+   "Galactic Empire"
+  ],
+  "masters": [],
+  "apprentices": []
+ },
+ {
+  "id": 83,
+  "name": "Tion Medon",
+  "aliases": [],
+  "homeworld": "Utapau",
+  "species": "Pau'an",
+  "film": "Revenge of the Sith",
+  "vehicles": 0,
+  "starships": 0,
+  "kind": "alien",
+  "gender": "male",
+  "tier": 3,
+  "affiliations": [
+   "Galactic Republic"
+  ],
+  "masters": [],
+  "apprentices": []
+ }
+]

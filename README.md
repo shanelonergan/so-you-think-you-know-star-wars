@@ -1,86 +1,42 @@
-# Star Wars Character Quiz
+# So You Think You Know Star Wars?
 
-Test your knowledge of Star Wars characters in this interactive quiz game! Available in two difficulty modes, this game challenges players to identify characters from the Star Wars universe.
+Name the Star Wars character in the portrait. Three wrong answers and you're out.
 
-🎮 [Play Now](https://youthinkyouiknowstarwars.netlify.app)
+🎮 [Play now](https://youthinkyouiknowstarwars.netlify.app)
 
-## Features
+- **Padawan**: pick from four names, 50 points each.
+- **Master**: type the name, 100 points, or 75 if the spelling is close.
+- One free hint per character, like their homeworld, faction, or who trained them, plus Give up and Skip.
+- It gets harder as you go: famous faces first, fan favourites from round 9, deep cuts from round 19.
+- Padawan choices always look like the answer: humans with humans, droids with droids, aliens with aliens, matched by gender where possible.
+- Every character comes up once before any repeats.
+- The top ten scores are kept in your browser.
 
-- **Two Game Modes**:
-  - 🎓 **Padawan Mode**: Multiple choice answers for beginners
-  - 👑 **Master Mode**: Type the character's name for a true challenge
+## How it's built
 
-- **Engaging Gameplay**:
-  - Dynamic character images from the Star Wars universe
-  - Helpful hints about characters' background
-  - Score tracking system
-  - Three lives per game
-  - Forgiving spelling system in Master Mode
+Written in Rust with [Leptos](https://leptos.dev), compiled to WebAssembly and bundled by [Trunk](https://trunkrs.dev).
+The only non-Rust code is the HTML shell and the stylesheet.
 
-- **Leaderboard System**:
-  - Save your high scores
-  - Compete for the top 10 positions
-  - Separate tracking for Padawan and Master modes
+| Path | What it holds |
+| --- | --- |
+| `src/game.rs` | The rules: judging guesses, scoring, dealing rounds. No browser code, so `cargo test` covers it. |
+| `src/hints.rs` | Which facts make a fair hint, and how to say them. `cargo test print_every_hint -- --ignored --nocapture` lists them all. |
+| `src/data.rs` | The 82 characters, compiled in from `data/characters.json`. |
+| `src/browser.rs` | localStorage, sessionStorage, randomness, reduced motion. |
+| `src/components/` | The intro crawl, menu, game, game-over screen and leaderboard. |
+| `style.css` | All styling. |
 
-## Technology Stack
-
-- React 18
-- TypeScript
-- Tailwind CSS
-- Vite
-- Lucide React for icons
+`data/characters.json` is a snapshot of [SWAPI](https://swapi.info): name, homeworld, species, first film, and vehicle and starship counts. Affiliations, masters, apprentices and droid models come from [akabab/starwars-api](https://github.com/akabab/starwars-api) (MIT). Each character also has a hand-picked `tier` (1 famous, 2 fan favourite, 3 deep cut), a `kind` and a `gender`; edit the tiers there to retune difficulty. SWAPI doesn't change, so a snapshot is all a game needs.
+Portraits load from the [swapi-gallery](https://github.com/vieraboschkova/swapi-gallery) mirror of the old Star Wars Visual Guide images.
 
 ## Development
 
-### Prerequisites
+You need Rust (with the `wasm32-unknown-unknown` target, which `rust-toolchain.toml` installs) and [Trunk](https://trunkrs.dev/guide/getting-started/installation.html).
 
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
 ```bash
-git clone <repository-url>
-cd star-wars-character-quiz
+trunk serve --open        # dev server with reload
+cargo test                # game rules
+trunk build --release     # production build into dist/
 ```
 
-2. Install dependencies
-```bash
-npm install
-```
-
-3. Start the development server
-```bash
-npm run dev
-```
-
-4. Build for production
-```bash
-npm run build
-```
-
-## Game Rules
-
-1. You start with 3 lives
-2. In Padawan Mode:
-   - Choose from 4 multiple choice options
-   - Each correct answer adds 50 points
-   - Incorrect answers cost one life
-
-3. In Master Mode:
-   - Type the character's name
-   - Each correct answer adds 100 points
-   - Close spelling matches earn 75 points
-   - Incorrect answers cost one life
-
-## API Credits
-
-This project uses:
-- [SWAPI](https://swapi.dev/) for Star Wars character data
-- [Star Wars Visual Guide](https://starwars-visualguide.com/) for character images
-- [Unsplash](https://unsplash.com/) for fallback images
-
-## License
-
-MIT License - feel free to use this project for learning, modification, and sharing!
+Netlify builds with `netlify.toml`.
